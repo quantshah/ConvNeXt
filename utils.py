@@ -18,9 +18,9 @@ from pathlib import Path
 
 import torch
 import torch.distributed as dist
-from torch._six import inf
+from torch import inf
 
-from tensorboardX import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 
 class SmoothedValue(object):
     """Track a series of values and provide access to smoothed values over a
